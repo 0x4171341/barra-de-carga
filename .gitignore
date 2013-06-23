@@ -1,13 +1,36 @@
-# Compiled Object files
-*.slo
-*.lo
-*.o
+#include <stdio.h>
+#include <conio.h>
+#include <dos.h>
+#include <iostream.h>
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
+void main ()
+{
+int i,l=1,t=1;
+float j=0,k=1.754;
+cuadro: (10,20,70,22);
+gotoxy(11,19);cout<<"ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»";
+gotoxy(11,20);cout<<"º                                                         º";
+gotoxy(11,21);cout<<"ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼";
+gotoxy(35,23);cout<<"CARGANDO";
+for(i=12;i<69;i++)
+{
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
+textcolor(RED);
+gotoxy(i,20);cout<<"°";
+sleep(t);
+textcolor(15);
+gotoxy(38,24);cout<<l<<"%";
+j+=k;
+l=j;
+if(i>20 && i<35) 
+t=1;
+if(i>30 && i<57)
+t=1;
+if(i>57)
+t=0.5;
+
+}
+gotoxy(37,24); cout<<"100%";
+sleep(1);
+getch();
+}
